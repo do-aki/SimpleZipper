@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleZipper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="SimpleZipper" Height="162.354" Width="345.513" AllowDrop="True" DragEnter="Window_DragEnter" Drop="Window_Drop">
     <Grid>
-        
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Height="26" Margin="10,10,0,0"><Run Text="Please "/><Run Text="d"/><Run Text="rag"/><Run Text=" and "/><Run Text="drop"/><Run Text=" directory"/><Run Text=" for create zip file."/><LineBreak/></TextBlock>
+        <TextBlock x:Name="textStatus" HorizontalAlignment="Left" Margin="10,68,0,0" TextWrapping="Wrap" Text="Waiting..." VerticalAlignment="Top"/>
+        <ProgressBar x:Name="progressStatus" HorizontalAlignment="Left" Height="20" Margin="10,98,0,0" VerticalAlignment="Top" Width="311"/>
+
     </Grid>
 </Window>
